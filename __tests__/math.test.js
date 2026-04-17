@@ -26,4 +26,9 @@ expect(factorial(0)).toBe(1);
 test('lance une erreur pour un nombre négatif', () => {
 expect(() => factorial(-1)).toThrow('Nombre négatif');
 });
+describe('subtract', () => {
+  test('soustrait deux nombres', () => {
+    expect(subtract(5, 3)).toBe(2);
+  });
+});
 });
